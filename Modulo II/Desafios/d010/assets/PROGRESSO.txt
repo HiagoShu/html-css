@@ -1,0 +1,10 @@
+Estilização do Header feita.
+
+Creio que o problema do site estar "escapando" para os lados seja a falta de tratamento
+ das imagens.
+
+A fazer: tratamento das imagens de forma responsiva.
+
+
+
+{NÃO USE IA PARA FAZER}

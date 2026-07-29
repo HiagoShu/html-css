@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            font-family:"Work Sans", Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in(polegada), px(pixel), pt(ponto), pc(pica/paica)
+            
+            Medidas Relativas
+            em(tamanho do M maiúsculo da fonte), ex(altura-x da fonte),
+            rem(tamanho do M maiúsculo da fonte do elemento raiz), vw(largura da tela), vh(altura da tela), vmin(menor valor entre largura e altura da tela), vmax(maior valor entre largura e altura da tela), %
+
+            px e em mais usados
+            16px geralmente = 1 em
+            */
+            font-size:1em;
+            font-weight:normal;
+            font-style:normal;
+            /*text-decoration:underline; */
+            /* 
+            Pesos literais
+            lighter, normal, bold, bolder
+
+            Pesos numéricos
+            100, 200, 300, 400, 500, 600, 700, 800, 900
+            */
+        }
+        h1{
+            /*
+            font-style:italic;
+            font-weight: bolder;
+            font-size: 2em;
+            font-family:'Work Sans', sans-serif;
+            */
+            /* 
+            Shorthand(mãozinha) font
+            font-style,font-weight,font-size,font-family
+            */
+            font: italic bolder 2em 'Work Sans',sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do   eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <h2>Subtítulo do exercício</h2>
+    <p> lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p><em>Tyranossaurus rex</em></p>
+</body>
+</html>

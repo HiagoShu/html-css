@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ /*Box-level */
+            background-color:lightgrey;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width:10px;
+            border-style: solid;
+            border-color:darkslategrey;
+            */
+            /* 
+            Shorthand para border
+            border: (largura) (estilo) (cor);
+            */
+            border: 10px solid darkslategrey;
+
+            /*
+            padding-top:10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            /* shorthand para padding
+            Se as quatro medidas forem iguais, basta informar uma vez só. Se forem diferentes, informar as quatro medidas na ordem: top, right, bottom, left
+            Se duas forem iguais, ele usará a top e a bottom para a primeira medida e a right e a left para a segunda medida. Se três forem iguais, ele usará a top para a primeira medida, a right e a left para a segunda medida e a bottom para a terceira medida.
+            */
+            padding: 10px;
+            /* 
+            Shorthand para Margin
+            (top,right,bottom,left)
+            A regra de padding sobre cada lado da caixa é a mesma para o
+            Margin. E você pode selecionar qualquer uma para ser auto, podendo assim centralizar a caixa.
+            */
+            margin: 20px auto 40px auto;
+            
+            /*
+            margin: auto;
+            */
+
+            /*  
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+            /*Shorthand para outline */
+            outline: 5px dashed salmon;
+
+        }
+        a{ /*Inline-level */
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Caixa do tipo Box-level: Vai ocupar toda a tela-->
+    <h1>Exemplo de Caixa Box Level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. </p>
+</body>
+</html>

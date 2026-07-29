@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e PseudoElementos</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+        # - id
+        . - class
+        :  - pseudo-classe
+        :: - pseudo-elemento
+        >  - filho direto
+        */
+
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight:bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: lightsalmon;
+
+        }
+        /* Pseudo-elementos */
+        .especial::before{
+            content: "=> "; /* Adiciona um ícone antes do link */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+        .especial::after{
+            content: " <="; /* Adiciona uma seta após o link */
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <h2>Exemplo do Professor Gustavo Guanabara</h2>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/user/gustavoguanabara" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.gustavoguanabara.com/" target="_blank">Site oficial</a></li>
+    </ul>
+    <a href="hover.html">Voltar para o exemplo de hover</a>
+    <a href="index.html">Voltar para o exemplo principal</a>
+</body>
+</html>
